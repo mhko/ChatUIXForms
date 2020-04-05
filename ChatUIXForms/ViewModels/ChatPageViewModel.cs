@@ -55,19 +55,18 @@ namespace ChatUIXForms.ViewModels
                     Messages.Insert(0, new Message() { Text = TextToSend, User = App.User });
                     TextToSend = string.Empty;
                 }
-               
             });
 
-            //Code to simulate reveing a new message procces
+            //Code to simulate receiving a new message procces
             Device.StartTimer(TimeSpan.FromSeconds(5), () =>
             {
                 if (LastMessageVisible)
                 {
-                    Messages.Insert(0, new Message(){ Text = "New message test" , User="Mario"});
+                    Messages.Insert(0, new Message(){ Text = "New message test", User="Bot"});
                 }
                 else
                 {
-                    DelayedMessages.Enqueue(new Message() { Text = "New message test" , User = "Mario"});
+                    DelayedMessages.Enqueue(new Message() { Text = "New message test", User = "Bot"});
                     PendingMessageCount++;
                 }
                 return true;
@@ -102,7 +101,6 @@ namespace ChatUIXForms.ViewModels
                     ShowScrollTap = true;
                     LastMessageVisible = false;
                 });
-
             }
         }
 

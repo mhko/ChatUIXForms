@@ -8,7 +8,7 @@ namespace ChatUIXForms
 {
     public partial class App : Application
     {
-        public static string User = "Rendy";
+        public static string User = "Nate Ko";
         public App()
         {
             InitializeComponent();

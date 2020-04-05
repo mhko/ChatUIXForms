@@ -77,7 +77,6 @@ namespace ChatUIXForms.Controls
             ItemDisappearingCommand?.Execute(e.Item);
         }
 
-
         public void ScrollToFirst()
         {
             Device.BeginInvokeOnMainThread(() =>
