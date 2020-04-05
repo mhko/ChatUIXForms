@@ -72,9 +72,6 @@ namespace ChatUIXForms.ViewModels
                 }
                 return true;
             });
-
-           
-           
         }
 
         void OnMessageAppearing(Message message)
@@ -108,7 +105,6 @@ namespace ChatUIXForms.ViewModels
 
             }
         }
-
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="2.5.9" />
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.2.7" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -23,4 +23,5 @@
   <ItemGroup>
     <None Remove="Views\.DS_Store" />
   </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarChatUIXFormsHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 </Project>

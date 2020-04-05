@@ -53,7 +53,6 @@ namespace ChatUIXForms.Controls
             var listView = (ExtendedListView)sender;
             if (e == null) return;
             listView.SelectedItem = null;
-
         }
 
         private void OnItemTapped(object sender, ItemTappedEventArgs e)
@@ -73,7 +72,6 @@ namespace ChatUIXForms.Controls
             }
         }
 
-
         private void OnItemDisappering(object sender, ItemVisibilityEventArgs e)
         {
             ItemDisappearingCommand?.Execute(e.Item);
@@ -82,7 +80,6 @@ namespace ChatUIXForms.Controls
 
         public void ScrollToFirst()
         {
-
             Device.BeginInvokeOnMainThread(() =>
             {
                 try
@@ -94,14 +91,12 @@ namespace ChatUIXForms.Controls
                         {
                             ScrollTo(msg, ScrollToPosition.Start, false);
                         }
-
                     }
                 }
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine(ex.ToString());
                 }
-
             });
         }
 
@@ -125,7 +120,6 @@ namespace ChatUIXForms.Controls
                 {
                     System.Diagnostics.Debug.WriteLine(ex.ToString());
                 }
-
             });
         }
     }

@@ -20,10 +20,8 @@ namespace ChatUIXForms.Helpers
             var messageVm = item as Message;
             if (messageVm == null)
                 return null;
-
           
             return (messageVm.User == App.User)? outgoingDataTemplate: incomingDataTemplate;
         }
-
     }
 }

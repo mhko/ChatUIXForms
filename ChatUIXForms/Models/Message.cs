@@ -1,5 +1,4 @@
-﻿using System;
-namespace ChatUIXForms.Models
+﻿namespace ChatUIXForms.Models
 {
     public class Message
     {
